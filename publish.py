@@ -35,3 +35,14 @@ if os.path.isfile(fileName):
     sequenceNumber = 0 #Initial publisher. How should neighbours publish this?
 
     #Check if (metadata, endPoint, sequenceNumber) exists in PUBLISHED.csv
+    #Assume a list published exists which is a list of tuples.
+    #TODO: Write code to read published.csv and create a list of tuples
+
+    published = {}
+    if (metadata, endPoint, sequenceNumber) in published:
+        #Do nothing?
+    else:
+        #publish this. Open TCP connections to all active peers, and send the tuple data
+        #Get active peers from peers.csv
+
+        #When done, print "Success?"
